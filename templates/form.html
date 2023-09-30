@@ -1,0 +1,35 @@
+<html>
+<body>
+<form action="{{url_for('predict')}}" method="POST">
+    <div class="form-group">
+        <label for="worst_concave_points">Worst Concave Points:</label>
+        <input type="text" id="worst_concave_points" name="worst_concave_points" placeholder="Enter worst concave points value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="worst_area">Worst Area:</label>
+        <input type="text" id="worst_area" name="worst_area" placeholder="Enter worst area value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="worst_perimeter">Worst Perimeter:</label>
+        <input type="text" id="worst_perimeter" name="worst_perimeter" placeholder="Enter worst perimeter value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="worst_radius">Worst Radius:</label>
+        <input type="text" id="worst_radius" name="worst_radius" placeholder="Enter worst radius value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="mean_concave_points">Mean Concave Points:</label>
+        <input type="text" id="mean_concave_points" name="mean_concave_points" placeholder="Enter mean concave points (float)">
+    </div>
+
+<div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+
+{{final_result}}
+</body>
+</html>
